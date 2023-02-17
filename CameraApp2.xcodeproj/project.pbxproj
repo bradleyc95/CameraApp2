@@ -11,6 +11,9 @@
 		E0ED6468299FF64700A819FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED6467299FF64700A819FE /* ContentView.swift */; };
 		E0ED646A299FF64900A819FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0ED6469299FF64900A819FE /* Assets.xcassets */; };
 		E0ED646D299FF64900A819FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0ED646C299FF64900A819FE /* Preview Assets.xcassets */; };
+		E0ED6477299FF7D400A819FE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED6476299FF7D400A819FE /* Home.swift */; };
+		E0ED6479299FFB3100A819FE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED6478299FFB3100A819FE /* CameraView.swift */; };
+		E0ED647C29A0136700A819FE /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED647B29A0136700A819FE /* CameraViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E0ED6467299FF64700A819FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0ED6469299FF64900A819FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0ED646C299FF64900A819FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0ED6476299FF7D400A819FE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E0ED6478299FFB3100A819FE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E0ED647B29A0136700A819FE /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		E0ED6464299FF64700A819FE /* CameraApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				E0ED647A29A0134600A819FE /* ViewModel */,
+				E0ED6475299FF7BE00A819FE /* View */,
 				E0ED6465299FF64700A819FE /* CameraApp2App.swift */,
 				E0ED6467299FF64700A819FE /* ContentView.swift */,
 				E0ED6469299FF64900A819FE /* Assets.xcassets */,
@@ -65,6 +73,23 @@
 				E0ED646C299FF64900A819FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E0ED6475299FF7BE00A819FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0ED6476299FF7D400A819FE /* Home.swift */,
+				E0ED6478299FFB3100A819FE /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0ED647A29A0134600A819FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0ED647B29A0136700A819FE /* CameraViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0ED6468299FF64700A819FE /* ContentView.swift in Sources */,
+				E0ED6477299FF7D400A819FE /* Home.swift in Sources */,
 				E0ED6466299FF64700A819FE /* CameraApp2App.swift in Sources */,
+				E0ED647C29A0136700A819FE /* CameraViewModel.swift in Sources */,
+				E0ED6479299FFB3100A819FE /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +298,9 @@
 				DEVELOPMENT_TEAM = 4CMMAN8CH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This applications requires the use of your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application requires use of your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This application requires access to your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +330,9 @@
 				DEVELOPMENT_TEAM = 4CMMAN8CH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This applications requires the use of your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application requires use of your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This application requires access to your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
